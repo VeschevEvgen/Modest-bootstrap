@@ -1,0 +1,156 @@
+@import '../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'mixin.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'header.scss';
+@import 'main.scss';
+// .wrap1900{
+// 	max-width: 1900px;
+// 	margin: 0 auto;
+// }
+// .wrap1170{
+// 	max-width: 1170px;
+// 	margin: 0 auto;
+// 	padding: 5px;
+// }
+// .header-bg {
+// 	background: @header-background;
+// }
+// .hook-navbar-nav() {
+// 	.flex-row(space-between, center);
+// 	};
+// .hook-navbar-item(){
+// 	margin-left: 13px;
+// 	margin-top: 20px;
+// 	margin-bottom: 20px;
+// };
+// .hook-navbar-link(){
+// 	font-size: 14px;
+// 	font-weight: 600;
+// 	line-height: 30px;
+// 	text-transform: uppercase;
+// 	padding: 5px 12px;
+// 	color: #a4aead;
+// 	border: 2px solid transparent;
+// 	border-radius: 4px;
+// 	&:hover{
+// 		border: 2px solid #5b6168;
+// 		color: #a4aead;
+// 	}
+// 	&.activ{
+// 		border: 2px solid @global-secondary-background;
+// 		color: @global-secondary-background;
+// 	}
+// }
+// .hook-navbar-toggler(){
+// 	width: 100%;
+// 	ul{
+// 		list-style: none;
+// 		padding: 0;
+
+// 		li{
+// 			width: 20px;
+// 			height: 3px;
+// 			background: @global-secondary-background;
+// 			margin-top: 3px;
+// 			margin-right: 10px;
+// 			margin-left: 10px;
+// 			border-radius: 3px;
+// 		}
+// 	}
+
+// };
+// .hook-navbar-collapse(){
+// 	@media all and (max-width: (@navbar-breakpoint - 1px) )  {
+// 		width: 100%;
+// 		.flex-row(space-between, flex-end);
+// 		li{
+// 			margin: 0;
+// 			 a{
+// 				font-size: 12px;
+// 				font-weight: 600;
+// 				line-height: 15px;
+// 				text-transform: uppercase;
+// 				padding: 2px 4px;
+// 				color: #a4aead;
+// 				border: 1px solid transparent;
+// 				border-radius: 2px;
+// 				}
+// 		}
+// 	}
+// 	@media all and (max-width: (400px - 1px) )  {
+// 		li a{font-size: 8px;}		
+// 	}
+// };
+
+
+// .slick-slide{
+// 	width: 100%;
+	
+// 	>.wrap1170{
+// 		min-height: 550px;
+// 	}
+// 	.h1{
+// 		color: #ffffff;
+// 		font-family: "Quattrocento Sans";
+// 		font-size: 36px;
+// 		font-weight: 700;
+// 		line-height: 42px;
+// 		text-transform: uppercase;
+// 	}
+	
+// 	.p{
+// 		color: #ccd0d7;
+// 		font-family: "Open Sans";
+// 		font-size: 16px;
+// 		font-weight: 400;
+// 		line-height: 26px;
+// 	}
+// 	// .slide-wripper{
+// 	// 	@include flex-col(space-between, center);
+// 	// 	padding-top: 40px;
+// 	// 	padding-bottom: 10%;
+// 	// 	padding-left: 10px;
+// 	// 	padding-right: 10px;
+// 	// }
+// }
+// // _____________________________galary-style____________________________
+// .slick-dots li{
+//     margin: 0 0px;
+
+// 	button:before
+// 	{
+//     content: '';
+//     background: transparent;
+//     width: 13px;
+//     height: 13px;
+//     border: 2px solid #fff;
+//     border-radius: 50%;
+//     opacity: 1 !important;
+// 	}
+// 	&.slick-active button:before
+// 	{
+//     content: '';
+//     background: blue;
+//     width: 13px;
+//     height: 13px;
+//     background: #fff;
+// 	}
+// }
+// .slick-prev,
+// .slick-next
+// {
+//    display: none !important;
+// }
+
+// .bg-slide1{
+// 	.background("../img/bg-galary.png");
+// 	min-height: 660px;
+// }
+// .slick-dots li button:before{
+// 	content: '' !important;
+// 	width: 13px !important;
+//   height: 13px !important;
+//   top:-50px !important;
+//   right: 0% !important;
+// }

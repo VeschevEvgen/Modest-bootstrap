@@ -1,0 +1,118 @@
+.wrap1900{
+	max-width: 1900px;
+	margin: 0 auto;
+}
+.bg-slide1{
+	@include background('../img/bg-galary.png');
+}
+.slick-slide{
+	min-height: 660px !important;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 25px;
+  // left: 0px;
+  list-style: none;
+  display: block;
+  text-align: right;
+  padding: 0;
+  padding-right: 10px;
+  margin: 0;
+  width: 100%; 
+  & li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 4px;
+    padding: 0;
+    cursor: pointer; 
+    & button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; 
+      &:hover, &:focus {
+        outline: none; }
+      &:hover:before, &:focus:before {
+          opacity: 1;
+          
+        }
+     	&:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 13px;
+        height: 13px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        border: 2px solid #fff;
+        color: black;
+        opacity: 1;
+        border-radius: 50%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+        }
+    &.slick-active button:before {
+      color: black;
+      opacity: 0.75;
+      background: #fff;}
+  }
+}
+.slick-slide{
+	>.container{
+	min-height: 660px !important;
+	@include flex-col(center, flex-start);
+	}
+	
+	.h1{
+		font-family: "OpenSans";
+		font-size: 36px;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 42px;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin-bottom: 31px;
+	}
+	.p{
+		color: #ccd0d7;
+		font-family: "Open Sans";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		margin-bottom: 31px;
+	}
+	
+	.btn{		
+		font-family: "Open Sans";
+		font-size: 14px;
+		line-height: 28px;
+		text-transform: uppercase;
+		margin-left: 11px;
+		margin-bottom: 10px;
+		a{
+			color: #ffffff;
+			border: 2px solid #ffffff;
+			line-height: 28px;
+			padding: 12px 25px;
+			border-radius: 4px;
+		}
+		a:hover{
+			border: 2px solid $brand-success;
+			text-decoration: none;
+			background: $brand-success;
+			color: #ffffff;
+			}
+	}
+}

@@ -1,0 +1,191 @@
+$navbar-breakpoint: $screen-sm;
+
+.header{
+	background-color: $brand-dark;
+	position: relative;
+	.navi{
+		@include flex-row(space-between, center);
+		width: 100%;
+		min-height: 81px;
+		position: relative;
+	}
+	.navi-brend{
+		@include flex-row(space-between, center);
+		margin: 10px;
+		min-height: 61px;
+	}
+	
+	.navi-nav {
+	margin: 0;
+	padding: 0;
+	@include flex-row(flex-end, center);
+	}
+.navi-item{
+	margin-left: 13px;
+	// margin-top: 20px;
+	// margin-bottom: 20px;
+	list-style: none;
+}
+.navi-link{
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 30px;
+	text-transform: uppercase;
+	padding: 5px 12px;
+	color: #a4aead;
+	border: 2px solid transparent;
+	border-radius: 4px;
+
+	&:hover{
+		border: 2px solid #5b6168;
+		color: #a4aead;
+		text-decoration: none;
+	}
+	&.activ{
+		border: 2px solid $brand-success;
+		color: $brand-success;
+	}
+}
+.navi-toggler{
+	display: none;
+	width: 100%;
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 10px;
+
+		li{
+			width: 20px;
+			height: 3px;
+			background: $brand-success;
+			margin-top: 3px;
+			margin-right: 10px;
+			margin-left: 10px;
+			border-radius: 3px;
+		}
+	}
+	
+	}
+	.navi-collapse{
+		@media all and (min-width: ($screen-md + 1px) )  {
+			display: flex !important;
+		}
+		@media all and (max-width: ($screen-md - 1px) )  {
+			width: 100%;
+			justify-content: space-around;
+			display: none;
+			margin-bottom: 	5px;
+			position: absolute;
+			top: 70px;
+			left: 0;
+			background-color: $brand-dark;
+			max-width: 750px;
+			margin: 0 auto;
+			border-radius: 0 0 3px 3px;
+			z-index: 10;
+			li{
+				margin: 0;
+				margin-bottom: 15px;
+				 a{
+					font-size: 12px;
+					font-weight: 600;
+					line-height: 15px;
+					text-transform: uppercase;
+					padding: 2px 4px;
+					color: #a4aead;
+					border: 1px solid transparent;
+					border-radius: 2px;
+					&:hover{
+						border: 1px solid #5b6168;
+					}
+					&.activ{
+						border: 1px solid $brand-success;
+					}
+					}
+			}
+		}
+		@media all and (max-width: ($screen-xs - 10px) )  {
+			li a{font-size: 8px;}		
+		}
+	}
+}
+
+
+// .navbar{
+// 	@include flex-row(space-between, center);
+// }
+// .navbar-nav{
+// 	@include flex-row(flex-end, center);
+// 	&>li>a.navbar-link{
+// 		padding-top: 5px;
+// 		padding-bottom: 5px;
+// 	}
+// 	list-style: none;
+// 	// width: 80%;
+// 	min-height: 81px;
+// 	}
+// .navbar-item{
+// 	margin-left: 7px;
+// }
+// .navbar-link{
+// 	font-size: 14px;
+// 	font-weight: 600;
+// 	line-height: 30px;
+// 	text-transform: uppercase;
+// 	padding: 1px 12px;
+// 	color: #a4aead;
+// 	border: 2px solid transparent;
+// 	border-radius: 4px;
+// 	padding-top: 5px;
+// 	padding-bottom: 5px;
+// 	&:hover{
+// 		border: 2px solid #5b6168;
+// 		color: #a4aead;
+// 		text-decoration: none;
+// 	}
+// 	&.activ{
+// 		border: 2px solid $brand-success;
+// 		color: $brand-success;
+// 	}
+// }
+// .navbar-toggler{
+// 	width: 100%;
+// 	display: none;
+// 	ul{
+// 		list-style: none;
+// 		padding: 0;
+
+// 		li{
+// 			width: 20px;
+// 			height: 3px;
+// 			background: $brand-success;
+// 			margin-top: 3px;
+// 			margin-right: 10px;
+// 			margin-left: 10px;
+// 			border-radius: 3px;
+// 		}
+// 	}
+
+// };
+// .navbar-collapse{
+// 	@media all and (max-width: ($navbar-breakpoint - 1px) )  {
+// 		width: 100%;
+// 		@include flex-row(space-between, flex-end);
+// 		li{
+// 			margin: 0;
+// 			 a{
+// 				font-size: 12px;
+// 				font-weight: 600;
+// 				line-height: 15px;
+// 				text-transform: uppercase;
+// 				padding: 2px 4px;
+// 				color: #a4aead;
+// 				border: 1px solid transparent;
+// 				border-radius: 2px;
+// 				}
+// 		}
+// 	}
+// 	@media all and (max-width: (400px - 1px) )  {
+// 		li a{font-size: 8px;}		
+// 	}
+// }
